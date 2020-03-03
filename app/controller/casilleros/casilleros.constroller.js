@@ -5,12 +5,12 @@ module.exports = {
 
     GET_CASILLEROS : ( req, res ) => {
         
-        res.json( Casilleros.GET() );
+        Casilleros.getAll(res);
         
     },
     GET_CASILLEROS_BY_ID : ( req, res ) => {
         
-        res.json( Casilleros.GET( req.params.id ) );
+        Casilleros.get( res, req.params.id );
         
     }
 
