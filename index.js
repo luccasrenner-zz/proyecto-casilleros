@@ -10,4 +10,6 @@ app.use( express.json( ) );
 app.use( Router );
 
 
-app.listen( SERVER.PORT );
+app.listen( SERVER.PORT, () => {
+  console.log('Levanto el servidor en ' + SERVER.PORT);
+} );
